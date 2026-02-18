@@ -1,0 +1,41 @@
+  GNU nano 7.2                                                              prac22.c
+#include <stdio.h>
+
+int main() {
+    int marks[5];
+    int total = 0;
+    float percentage;
+    int i;
+
+
+    printf("Enter marks of 5 subjects:\n");
+    for(i = 0; i < 5; i++) {
+        printf("Subject %d: ", i+1);
+        scanf("%d", &marks[i]);
+        total += marks[i];
+    }
+
+
+    percentage = (float)total / 5;
+
+
+    printf("\n--- Student Marksheet ---\n");
+    printf("Total Marks: %d\n", total);
+    printf("Percentage: %.2f\n", percentage);
+
+
+    if(percentage >= 90) {
+        printf("Grade: A\n");
+    }
+    else if(percentage >= 75) {
+        printf("Grade: B\n");
+    }
+    else if(percentage >= 60) {
+        printf("Grade: C\n");
+    }
+    else if(percentage >= 40) {
+        printf("Grade: D\n");
+    }
+
+^G Help          ^O Write Out     ^W Where Is      ^K Cut           ^T Execute       ^C Location      M-U Undo         M-A Set Mark     M-] To Bracket
+^X Exit          ^R Read File     ^\ Replace       ^U Paste         ^J Justify       ^/ Go To Line    M-E Redo         M-6 Copy         ^Q Where Was
