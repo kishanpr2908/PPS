@@ -1,0 +1,30 @@
+  GNU nano 7.2                                             test.c
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+    while (i <= 255) {
+        printf("ASCII Value: %d  Character: %c\n", i, i);
+        i++;
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   [ Read 10 lines ]
+^G Help        ^O Write Out   ^W Where Is    ^K Cut         ^T Execute     ^C Location    M-U Undo       M-A Set Mark
+^X Exit        ^R Read File   ^\ Replace     ^U Paste       ^J Justify     ^/ Go To Line  M-E Redo       M-6 Copy
