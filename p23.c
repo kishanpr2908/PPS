@@ -1,4 +1,3 @@
-  GNU nano 7.2                                                                p23.c
 #include <stdio.h>
 
 int main()
@@ -21,6 +20,7 @@ int main()
         printf("\n1. Reverse String");
         printf("\n2. Upper to Lower Case");
         printf("\n3. Exit");
+
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
 
@@ -36,6 +36,26 @@ int main()
                 break;
 
             case 2:
+                printf("Converted String: ");
+                for(i = 0; str[i] != '\0'; i++)
+                {
+                    if(str[i] >= 'A' && str[i] <= 'Z')
+                        printf("%c", str[i] + 32);
+                    else
+                        printf("%c", str[i]);
+                }
+                printf("\n");
+                break;
 
-^G Help          ^O Write Out     ^W Where Is      ^K Cut           ^T Execute       ^C Location      M-U Undo         M-A Set Mark     M-] To Bracket
-^X Exit          ^R Read File     ^\ Replace       ^U Paste         ^J Justify       ^/ Go To Line    M-E Redo         M-6 Copy         ^Q Where Was
+            case 3:
+                printf("Exiting program...\n");
+                break;
+
+            default:
+                printf("Invalid choice!\n");
+        }
+
+    } while(choice != 3);
+
+    return 0;
+}
