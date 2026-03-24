@@ -32,7 +32,7 @@ int main()
     printf("Odd Sum = %d\n", sume);
 
     return 0;
-
+}
 
 
 
